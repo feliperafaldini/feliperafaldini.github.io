@@ -26,12 +26,56 @@
 
     <div class="filebar">
         <div class="sidebar"></div>
-        <p><span class="underline">F</span>ile</p>
-        <p><span class="underline">E</span>dit</p>
-        <p><span class="underline">V</span>iew</p>
-        <p><span class="underline">F</span>avorites</p>
-        <p><span class="underline">V</span>iew</p>
-        <p><span class="underline">H</span>elp</p>
+        <div class="file-dropdown">
+            <button class="file-button"><span class="underline">F</span>ile</button>
+            <div class="file-dropdown-content" id="file-dropdown-content">
+                <a href="#">Open</a>
+                <hr>
+                <a href="#">Save</a>
+                <a href="#">Save As...</a>
+                <hr>
+                <a href="#">Print</a>
+                <a href="#">Exit</a>
+            </div>
+        </div>
+        <div class="edit-dropdown">
+            <button class="edit-button"><span class="underline">E</span>dit</button>
+            <div class="edit-dropdown-content" id="edit-dropdown-content">
+                <a href="#">Undo</a>
+                <a href="#">Redo</a>
+                <hr>
+                <a href="#">Cut</a>
+                <a href="#">Copy</a>
+                <a href="#">Paste</a>
+                <hr>
+                <a href="#">Select All</a>
+                <a href="#">Clear All</a>
+            </div>
+        </div>
+        <div class="view-dropdown">
+            <button class="view-button"><span class="underline">V</span>iew</button>
+            <div class="view-dropdown-content" id="view-dropdown-content">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JavaScript</a>
+            </div>
+        </div>
+        <div class="favorites-dropdown">
+            <button class="favorites-button"><span class="underline">F</span>avorites</button>
+            <div class="favorites-dropdown-content" id="favorites-dropdown-content">
+                <a href="https://github.com/feliperafaldini">GitHub</a>
+            </div>
+        </div>
+        <div class="tools-dropdown">
+            <button class="tools-button"><span class="underline">T</span>ools</button>
+            <div class="tools-dropdown-content" id="tools-dropdown-content">
+            </div>
+        </div>
+        <div class="help-dropdown">
+            <button class="help-button"><span class="underline">H</span>elp</button>
+            <div class="help-dropdown-content" id="help-dropdown-content">
+            </div>
+        </div>
     </div>
 
     <div class="iconbar">

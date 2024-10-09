@@ -5,6 +5,78 @@ const text = `Oi, eu sou Felipe Rafaldini, obrigado por visitar minha página na
 
 let index = 0;
 let typingInterval;
+const fileButton = document.querySelector(".file-button");
+const fileDropdownContent = document.getElementById("file-dropdown-content");
+const editButton = document.querySelector(".edit-button");
+const editDropdownContent = document.getElementById("edit-dropdown-content");
+const viewButton = document.querySelector(".view-button");
+const viewDropdownContent = document.getElementById("view-dropdown-content");
+const favoritesButton = document.querySelector(".favorites-button");
+const favoritesDropdownContent = document.getElementById("favorites-dropdown-content");
+const toolsButton = document.querySelector(".tools-button");
+const toolsDropdownContent = document.getElementById("tools-dropdown-content");
+const helpButton = document.querySelector(".help-button");
+const helpDropdownContent = document.getElementById("help-dropdown-content");
+
+fileButton.addEventListener("click", function () {
+    fileDropdownContent.style.display = fileDropdownContent.style.display === "block" ? "none" : "block";
+});
+
+document.addEventListener("click", function (event) {
+    if (!fileButton.contains(event.target) && !fileDropdownContent.contains(event.target)) {
+        fileDropdownContent.style.display = "none";
+    }
+});
+
+editButton.addEventListener("click", function () {
+    editDropdownContent.style.display = editDropdownContent.style.display === "block" ? "none" : "block";
+});
+
+document.addEventListener("click", function (event) {
+    if (!editButton.contains(event.target) && !editDropdownContent.contains(event.target)) {
+        editDropdownContent.style.display = "none";
+    }
+});
+
+viewButton.addEventListener("click", function () {
+    viewDropdownContent.style.display = viewDropdownContent.style.display === "block" ? "none" : "block";
+});
+
+document.addEventListener("click", function (event) {
+    if (!viewButton.contains(event.target) && !viewDropdownContent.contains(event.target)) {
+        viewDropdownContent.style.display = "none";
+    }
+});
+
+favoritesButton.addEventListener("click", function () {
+    favoritesDropdownContent.style.display = favoritesDropdownContent.style.display === "block" ? "none" : "block";
+});
+
+document.addEventListener("click", function (event) {
+    if (!favoritesButton.contains(event.target) && !favoritesDropdownContent.contains(event.target)) {
+        favoritesDropdownContent.style.display = "none";
+    }
+});
+
+toolsButton.addEventListener("click", function () {
+    toolsDropdownContent.style.display = toolsDropdownContent.style.display === "block" ? "none" : "block";
+});
+
+document.addEventListener("click", function (event) {
+    if (!toolsButton.contains(event.target) && !toolsDropdownContent.contains(event.target)) {
+        toolsDropdownContent.style.display = "none";
+    }
+});
+
+helpButton.addEventListener("click", function () {
+    helpDropdownContent.style.display = helpDropdownContent.style.display === "block" ? "none" : "block";
+});
+
+document.addEventListener("click", function (event) {
+    if (!helpButton.contains(event.target) && !helpDropdownContent.contains(event.target)) {
+        helpDropdownContent.style.display = "none";
+    }
+});
 
 function typeText(textContentElement) {
     if (index < text.length) {

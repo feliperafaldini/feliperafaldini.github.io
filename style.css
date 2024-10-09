@@ -70,6 +70,186 @@ body {
     box-shadow: inset 5px 5px 5px rgba(255, 255, 255, 0.1);
 }
 
+.file-button {
+    border: 0.1px outset #FFFFFF;
+    border-radius: 2px;
+    padding: 2px;
+    background: linear-gradient(90deg, #C0C0C0 100%, #DEDEDE 100%);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.file-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DEDEDE;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 1px;
+}
+
+.file-dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.file-dropdown-content a:hover {
+    background-color: #CCCCCC;
+}
+
+.edit-button {
+    border: 0.1px outset #FFFFFF;
+    border-radius: 2px;
+    padding: 2px;
+    background: linear-gradient(90deg, #C0C0C0 100%, #DEDEDE 100%);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.edit-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DEDEDE;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 1px;
+}
+
+.edit-dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.edit-dropdown-content a:hover {
+    background-color: #CCCCCC;
+}
+
+.view-button {
+    border: 0.1px outset #FFFFFF;
+    border-radius: 2px;
+    padding: 2px;
+    background: linear-gradient(90deg, #C0C0C0 100%, #DEDEDE 100%);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.view-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DEDEDE;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 1px;
+}
+
+.view-dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.view-dropdown-content a:hover {
+    background-color: #CCCCCC;
+}
+
+.favorites-button {
+    border: 0.1px outset #FFFFFF;
+    border-radius: 2px;
+    padding: 2px;
+    background: linear-gradient(90deg, #C0C0C0 100%, #DEDEDE 100%);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.favorites-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DEDEDE;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 1px;
+}
+
+.favorites-dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.favorites-dropdown-content a:hover {
+    background-color: #CCCCCC;
+}
+
+.tools-button {
+    border: 0.1px outset #FFFFFF;
+    border-radius: 2px;
+    padding: 2px;
+    background: linear-gradient(90deg, #C0C0C0 100%, #DEDEDE 100%);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.tools-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DEDEDE;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 1px;
+}
+
+.tools-dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.tools-dropdown-content a:hover {
+    background-color: #CCCCCC;
+}
+
+.help-button {
+    border: 0.1px outset #FFFFFF;
+    border-radius: 2px;
+    padding: 2px;
+    background: linear-gradient(90deg, #C0C0C0 100%, #DEDEDE 100%);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.help-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DEDEDE;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 1px;
+}
+
+.help-dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.help-dropdown-content a:hover {
+    background-color: #CCCCCC;
+}
+
 .sidebar {
     border: 0.1px outset #FFFFFF;
     border-radius: 2px;
