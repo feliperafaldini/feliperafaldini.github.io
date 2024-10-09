@@ -55,15 +55,19 @@
         <div class="view-dropdown">
             <button class="view-button"><span class="underline">V</span>iew</button>
             <div class="view-dropdown-content" id="view-dropdown-content">
-                <a href="#">HTML</a>
-                <a href="#">CSS</a>
-                <a href="#">JavaScript</a>
+                <a href="https://github.com/feliperafaldini/feliperafaldini.github.io/blob/main/index.html"
+                    target="_blank">HTML</a>
+                <a href="https://github.com/feliperafaldini/feliperafaldini.github.io/blob/main/style.css"
+                    target="_blank">CSS</a>
+                <a href="https://github.com/feliperafaldini/feliperafaldini.github.io/blob/main/script.js"
+                    target="_blank">JavaScript</a>
             </div>
         </div>
         <div class="favorites-dropdown">
             <button class="favorites-button"><span class="underline">F</span>avorites</button>
             <div class="favorites-dropdown-content" id="favorites-dropdown-content">
                 <a href="https://github.com/feliperafaldini">GitHub</a>
+                <a href="mailto:feliperafaldini@gmail.com">E-mail</a>
             </div>
         </div>
         <div class="tools-dropdown">
@@ -76,15 +80,16 @@
             <div class="help-dropdown-content" id="help-dropdown-content">
             </div>
         </div>
+        <img src="windows98.gif" alt="Windows 98 dance GIF" class="windows98-gif">
     </div>
 
     <div class="iconbar">
         <div class="sidebar"></div>
-        <p class="bold"> ◀ Back </p>
-        <p class="bold"> ▶ </p>
-        <p class="bold"> ❌ </p>
-        <p class="bold"> 🔃 </p>
-        <p class="bold"> 🏠 </p>
+        <button class="iconbar-button" onclick="history.back()"> ◀ Back </button>
+        <button class="iconbar-button" onclick="history.forward(+1)"> ▶ </button>
+        <button class="iconbar-button"> ❌ </button>
+        <button class="iconbar-button" onclick="location.reload()"> 🔃 </button>
+        <button class="iconbar-button" onclick="location.href='/'"> 🏠 </button>
         <p class="bold"> | </p>
         <p class="bold"> 🔎 Search</p>
         <p class="bold"> 📂 Favorites</p>
@@ -102,12 +107,13 @@
         <p> A<span class="underline">d</span>dress</p>
         <div class="urlbar">
             <img src="ie-icon.png" alt="Internet Explorer Icon" class="icon">
-            <p>https://github.com/feliperafaldini</p>
+            <input type="text" id="url" name="url" placeholder="https://www.google.com" class="url-input"
+                value="https://feliperafaldini.github.io"></input>
             <div class="urlbar-right">
                 <p class="url">🔽</p>
             </div>
         </div>
-        <p class="go"> ✅Go </p>
+        <button class="iconbar-button" onclick="openUrl()"> ✅Go </button>
 
     </div>
 
@@ -126,6 +132,8 @@
         <div class="content-body">
             <div class="content-sidebar">
                 <p onclick="showHomepage()">Homepage</p>
+                <br>
+                <p onclick="showProjects()">Projetos</p>
                 <br>
                 <p onclick="showContact()">Contato</p>
                 <br>

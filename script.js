@@ -1,6 +1,8 @@
 const text = `Oi, eu sou Felipe Rafaldini, obrigado por visitar minha página na web!
+    
     Sou desenvolvedor e estudante de Engenharia da Computação na Universidade de Sorocaba (UNISO).
     Estou aprendendo HTML, CSS e JavaScript com algumas experiências anteriores em Dart/Flutter, Python e LUA.
+    
     Caso queira me contactar, acesse o menu lateral para o e-mail.`;
 
 let index = 0;
@@ -78,6 +80,18 @@ document.addEventListener("click", function (event) {
     }
 });
 
+function openUrl() {
+    let urlInput = document.getElementById("url").value.trim();
+    if (urlInput == "https://feliperafaldini.github.io") {
+        return;
+    }
+    if (!urlInput.startsWith("http://") && !urlInput.startsWith("https://")) {
+        urlInput = "https://" + urlInput;
+    }
+
+    window.open(urlInput, "_blank");
+}
+
 function typeText(textContentElement) {
     if (index < text.length) {
         if (text[index] == "\n") {
@@ -115,6 +129,16 @@ function showContact() {
         Email: feliperafaldini@gmail.com<br><br>
         GitHub: @feliperafaldini<br>
     </p> 
+    `;
+    clearInterval(typingInterval);
+}
+
+function showProjects() {
+    const contentMain = document.getElementById("content-main");
+    contentMain.innerHTML = `
+        <p class="main">Meus projetos:</p>
+        <br>
+        <span class="main-link-wrapper">- </span><a href="https://github.com/feliperafaldini/linkedu" target="_blank" class="main-link">LINKEDU</a>
     `;
     clearInterval(typingInterval);
 }

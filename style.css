@@ -63,7 +63,7 @@ body {
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 10px 10px;
+    padding: 10px 1px;
     padding-left: 2px;
     height: 28px;
     gap: 15px;
@@ -250,6 +250,15 @@ body {
     background-color: #CCCCCC;
 }
 
+.windows98-gif {
+    height: 21px;
+    border: 2px solid #000000;
+    border-radius: 1px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    background: #000000;
+    margin-left: auto;
+}
+
 .sidebar {
     border: 0.1px outset #FFFFFF;
     border-radius: 2px;
@@ -275,6 +284,17 @@ body {
     height: 30px;
     gap: 15px;
     box-shadow: inset 5px 5px 5px rgba(255, 255, 255, 0.1);
+}
+
+.iconbar-button {
+    border: none;
+    border-radius: 1px;
+    background: none;
+    cursor: pointer;
+}
+
+.iconbar-button:hover {
+    background: #ABABAB;
 }
 
 .iconbar p {
@@ -311,15 +331,19 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding-right: 1px;
-    width: 100%;
+    cursor: pointer;
 }
 
 .urlbar img.icon {
     width: 38px;
 }
 
-.url {
-    cursor: pointer;
+.url-input {
+    outline: none;
+    border: none;
+    flex-grow: 1;
+    padding: 0 5px;
+    height: 100%;
 }
 
 .go {
@@ -353,12 +377,6 @@ body {
     width: 100%;
 }
 
-.h1 {
-    text-align: center;
-    color: lightgreen;
-    font-size: 1.5em;
-}
-
 .content-body {
     display: flex;
     width: 100%;
@@ -369,12 +387,13 @@ body {
 .content-sidebar {
     width: 15%;
     height: 100%;
+    border: lightgreen;
 }
 
 .content-sidebar p {
-    text-align: center;
+    text-align: justify;
     padding-left: 10px;
-    padding-top: 50px;
+    padding-top: 20px;
     color: lightgreen;
     cursor: pointer;
 }
@@ -390,6 +409,16 @@ body {
     text-align: justify;
     color: lightgreen;
     font-size: 1.0em;
+}
+
+.main-link-wrapper {
+    color: lightgreen;
+}
+
+.main-link {
+    text-decoration: underline;
+    color: lightgreen;
+    cursor: pointer;
 }
 
 .cursor {
