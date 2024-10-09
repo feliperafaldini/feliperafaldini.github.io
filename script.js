@@ -52,7 +52,7 @@ function rotateLetter(span, finalLetter) {
         span.textContent = " ";
         return;
     }
-    let currentCharCode = 20;
+    let currentCharCode = 65;
     const finalCharCode = finalLetter.charCodeAt(0);
 
     const interval = setInterval(() => {
