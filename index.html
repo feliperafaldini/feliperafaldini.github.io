@@ -69,27 +69,32 @@
 
     <div class="content">
         <div class="content-title">
-            <h1 class="h1">Homepage do Felipe</h1>
+            <span class="letter" data-final="H">H</span>
+            <span class="letter" data-final="O">O</span>
+            <span class="letter" data-final="M">M</span>
+            <span class="letter" data-final="E">E</span>
+            <span class="letter" data-final="P">P</span>
+            <span class="letter" data-final="A">A</span>
+            <span class="letter" data-final="G">G</span>
+            <span class="letter" data-final="E">E</span>
         </div>
+
         <div class="content-body">
             <div class="content-sidebar">
-                <p>Homepage</p>
+                <p onclick="showHomepage()">Homepage</p>
                 <br>
-                <p>Contato</p>
+                <p onclick="showContact()">Contato</p>
                 <br>
             </div>
-            <div class="content-main">
-                <p class="main">Oi, eu sou Felipe Rafaldini, obrigado por visitar minha página na web!
-                    <br><br>Sou
-                    desenvolvedor e estudante de Engenharia da Computação na Universidade de Sorocaba (UNISO).
-                    <br>Estou aprendendo HTML, CSS e JavaScript com algumas experiências anteriores em Dart/Flutter,
-                    Python e LUA.
-                    <br><br> Caso queira me contactar, acesse o menu lateral para o e-mail.
+            <div class="content-main" id="content-main">
+                <p class="main" id="typed-text">
+                    <span class="text-content"></span><span class="cursor">_</span>
                 </p>
             </div>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
